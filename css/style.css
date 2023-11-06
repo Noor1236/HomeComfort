@@ -2,7 +2,7 @@
 
 * {
     padding: 0;
-    margin: 0;
+    margin: -2px;
     box-sizing: border-box;
 }
 
@@ -23,7 +23,7 @@ nav {
 .nav_link li {
     list-style: none;
     display: inline-block;
-    padding: 30px 015px;
+    padding: 30px 15px;
 }
 
 .nav_link li a {
@@ -220,11 +220,11 @@ hr {
 /* Banner Section */
 
 .banner_section {
-    padding: 10px 0px;
+    padding: 50px 0px;
     background: url('../assets/images/home/banner/bg_banner.svg');
     background-repeat: no-repeat;
     background-position: right center;
-    background-size: 490px 90%;
+    background-size: 560px 100%;
 
 
 }
@@ -383,9 +383,7 @@ hr {
 
 }
 
-.tags .service,
-.tags .rate,
-.tags .team {
+.tags .inner_tag {
     border-radius: 300px;
     background: #F8F8F8;
     box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.08);
@@ -397,18 +395,15 @@ hr {
     align-items: center;
 }
 
-.tags .service img,
-.tags .rate img,
-.tags .team img {
+
+.tags .tag img {
 
 
     height: 100px;
     width: 100px;
 }
 
-.serv h3 ,
-.rates h3 ,
-.teams h3 {
+.tag h3 {
     margin-top: 20px;
     color: #1E1E1E;
     font-family: Rubik;
@@ -561,6 +556,118 @@ hr {
 
 /* Our clients */
 
+
 .our_clients {
-    padding: 50px 0px;
+    padding: 70px 0px;
+    background: #F9F9F9;
+
+}
+
+.inner_client h2 {
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.inner_client span {
+    color: #058B8C;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.8px;
+}
+
+.inner_client p {
+    margin-top: 2rem;
+    color: #1E1E1E;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 14.9px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    /* 166.667% */
+}
+
+.inner_client .review {
+    padding: 20px;
+    border-radius: 30px;
+    background: #FFF;
+    box-shadow: 5px 5px 20px 0px rgba(0, 0, 0, 0.10);
+    width: 400px;
+    height: 250px;
+    flex-shrink: 0;
+    margin-top: 30px;
+    /* display: flex; */
+    /* justify-content: left;
+    align-items: left; */
+}
+
+.client {
+    /* padding: 0px; */
+    display: flex;
+    gap: 1.5rem;
+
+}
+
+.client img {
+    width: 70px;
+    height: 70px;
+    flex-shrink: 0;
+    /* object-fit: contain; */
+}
+
+.month h3 {
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 23px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 30px;
+    margin-top: 8px;
+}
+
+.date {
+    margin-bottom: 0px;
+    display: flex;
+    align-items: center;
+    /* margin-left: 10px; */
+
+}
+
+.date .ago {
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 0px;
+}
+
+.date img {
+    margin-left: 10px;
+    /* margin-top: 0px; */
+    width: 20px;
+    height: 20px;
+
+}
+
+.review p {
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: left;
+    margin-top: 25px;
 }
