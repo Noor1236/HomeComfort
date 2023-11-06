@@ -207,7 +207,7 @@ hr {
     line-height: normal;
     letter-spacing: -1.26px;
     text-decoration: none;
-    
+
 }
 
 .quick img {
@@ -366,6 +366,61 @@ hr {
     object-fit: cover;
     border-radius: 50%;
 }
+
+/* After Banner */
+
+.after_banner {
+    padding: 40px 0px;
+    /* background: #F9F9F9; */
+}
+
+.tags {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+
+}
+
+.tags .service,
+.tags .rate,
+.tags .team {
+    border-radius: 300px;
+    background: #F8F8F8;
+    box-shadow: 10px 10px 50px 10px rgba(0, 0, 0, 0.08);
+    width: 150px;
+    height: 150px;
+    flex-shrink: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tags .service img,
+.tags .rate img,
+.tags .team img {
+
+
+    height: 100px;
+    width: 100px;
+}
+
+.serv h3 ,
+.rates h3 ,
+.teams h3 {
+    margin-top: 20px;
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    /* 142.857% */
+}
+
+
 
 /* Who Are You */
 
