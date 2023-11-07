@@ -16,12 +16,26 @@
 
 header {
     background: #F9F9F9;
+    
 }
+
+/* Fixed Navigation Bar */
+/* header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    background: #F9F9F9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
+    
 }
 
 .nav_link li {
@@ -234,6 +248,7 @@ hr {
     background-position: right center;
     background-size: 560px 100%;
     background-color: #F9F9F9;
+    /* margin-top: 50px;   */ /* If nav fixed*/
 }
 
 .inner_banner {
