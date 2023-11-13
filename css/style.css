@@ -2,7 +2,7 @@
 
 * {
     padding: 0;
-    margin: -2px;
+    margin: 0;
     box-sizing: border-box;
 }
 
@@ -16,7 +16,7 @@
 
 header {
     background: #F9F9F9;
-    
+
 }
 
 /* Fixed Navigation Bar */
@@ -34,8 +34,8 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    
-    
+
+
 }
 
 .nav_link li {
@@ -248,7 +248,8 @@ hr {
     background-position: right center;
     background-size: 560px 100%;
     background-color: #F9F9F9;
-    /* margin-top: 50px;   */ /* If nav fixed*/
+    /* margin-top: 50px;   */
+    /* If nav fixed*/
 }
 
 .inner_banner {
@@ -664,7 +665,7 @@ hr {
 }
 
 .date {
-    margin-bottom: 0px;
+    /* margin-bottom: 0px; */
     display: flex;
     align-items: center;
 
@@ -673,13 +674,13 @@ hr {
 .date .ago {
     color: #1E1E1E;
     font-family: Rubik;
-    font-size: 14px;
+    font-size: 13.5px;
     font-style: normal;
     font-weight: 400;
-    line-height: 30px;
-    text-align: left;
-    margin-top: 10px;
-    margin-right: 80px;
+    line-height: 45px;
+    /* 225% */
+    margin-top: 3px;
+    margin-right: 50px;
 }
 
 .date img {
@@ -698,5 +699,122 @@ hr {
     font-weight: 600;
     line-height: 30px;
     text-align: left;
-    margin-top: 25px;
+    margin-top: 5px;
+}
+
+/* Services */
+
+.services_section {
+    padding: 50px 0px;
+    background: #F9F9F9;
+}
+
+.services_section h2 {
+    color: #1E1E1E;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    margin-bottom: 40px;
+}
+
+.services_section h2 span {
+    color: #058B8C;
+    font-family: Rubik;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -1.8px;
+    margin-bottom: 40px;
+}
+
+.services_section .service_card {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.service_card .service {
+    border-radius: 30px;
+    width: 75%;
+    height: 250px;
+    position: relative;
+}
+
+.service_card .service .service_img {
+    width: 100%;
+    height: 100% !important;
+}
+
+.service_card .service .service_img img {
+    width: 100%;
+    height: 100% !important;
+    border-radius: 30px;
+
+}
+
+.service_card .service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 12.85%, #FFF 75.55%);
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: self-end;
+    padding: 10px;
+}
+
+.service_card .service .overlay .booking {
+    text-align: center;
+
+}
+
+.service_card .service .overlay .booking h2 {
+    color: #1E1E1E;
+    font-family: Rubik;
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    /* 125% */
+    margin-bottom: 8px;
+}
+
+.service_card .service .overlay .booking button {
+    border-radius: 48px;
+    border: 2px solid #FFF;
+    padding: 15px;
+    background-color: transparent;
+    width: 100%;
+    color: #FFF;
+    text-align: center;
+    font-family: Rubik;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    display: none;
+}
+
+.service_card .service:hover .overlay {
+    background: rgba(30, 30, 30, 0.6);
+    align-items: center;
+    cursor: pointer;
+}
+
+.service_card .service:hover .overlay h2 {
+    color: white;
+}
+
+.service_card .service:hover .overlay button {
+    display: block;
+
 }
